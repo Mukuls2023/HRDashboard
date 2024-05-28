@@ -1,0 +1,94 @@
+﻿@model gNxt_HR_Dashboard.Models.slideListData
+@{
+    Layout = "_LayoutPage";
+}
+<style>
+    .div-background {
+        background-size: cover;
+        height:2200px;
+        width:1193px;
+
+    }
+    .input-text-font-size{
+    font-family: Sans-serif !important;
+}
+</style>
+<link rel="stylesheet" href="~/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<div class="container-fluid p-5 pb-0" style="background-color:#DCDCDC">
+    <div class="bg-white">
+        <div class="row">
+            <div>
+                <div class="p-1">
+                    <div class="container-fluid p-0">
+                        <div class="div-background" @*style="height: 498px;overflow-y:auto "*@>
+                            <div class="row ms-5 mt-5 me-5 mb-5 shadow" style="background-color:#0C87CA; ">
+                                <div class="d-flex">
+                                    @*<img src ="~/Image/Startpngwing.com.png" class="mt-1" style="width:46px; height:45px" />*@
+                                    <img src="~/Image/Startpngwing.png" class="mt-1" style="width:80px; height:76px" />
+                                    <strong class="fs-1 ms-2 mt-2 input-text-font-size" style="color:red">Celebrations</strong>
+                                </div>
+
+                                @foreach (var items in Model.lstCelebration)
+                                {
+                                    <div class="" style="background-color:white;">
+                                        <div class="d-flex">
+                                            <img class="mt-4 ms-3" src=@items.Image style="width:70px; height:70px;" />
+                                            <p class="fs-4 ms-4 mt-4 input-text-font-size" style="color:#0C87CA"><b class="fs-4 input-text-font-size">@items.EmpName</b><br />@items.MessageText</p>
+                                            <span class="mt-4 me-3 d-flex justify-content-center align-items-center ms-auto bg-light" style="border-radius: 12px; width: 70px; height: 60px;">
+                                                @if (@items.CelebrationType == "DOB")
+                                                {
+                                                    <i class="fa fa-birthday-cake mt-4 mb-4" style="font-size: 40px; color: #808080;"></i>
+                                                }
+                                                else
+                                                {
+                                                    <i class="fa fa-calendar mt-4 mb-4" style="font-size: 40px; color: #808080;"></i>
+                                                }
+                                            </span>
+                                          
+                                        </div>
+
+                                        <hr class="me-3" style="margin-left:110px;" />
+                                    </div>
+
+                                }
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-end p-2">
+            <strong style="font-size:15px">© powered by </strong>
+            <img src="~/image/gnxt__newlogo.png" alt="Powered by logo" style="width:10%; height:100%" />
+        </div>
+    </div>
+
+</div>
+
+<style>
+    .reset {
+        all: revert;
+        border: 50px solid #f0efef;
+        overflow: hidden;
+    }
+
+    .resetDiv {
+        all: revert;
+        border: 13px solid #f0efef;
+        overflow: hidden;
+    }
+</style>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script>
+        // Activate the carousel
+        $('#carouselExampleIndicators').carousel({
+            interval: 40000 // Change slide every 2 seconds
+        });
+</script>

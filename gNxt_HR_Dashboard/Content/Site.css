@@ -1,0 +1,165 @@
+﻿/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}*/
+
+/*Index Page CSS*/
+
+.elementor-button {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #FFFFFF;
+    background-color: #0C87CA;
+    border-radius: 20px;
+    padding: 26px 42px !important;
+    text-decoration: none !important; /* Added !important */
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 14px 31px 0px rgba(0, 25.99999999999999, 87, 0.1);
+    border-radius: 20px 0px 20px 0px;
+}
+
+        
+    .Login_btn {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 27px;
+        color: #FFFFFF;
+        background-color: #0C87CA;
+        border-radius: 20px;
+        padding: 13px 42px;
+        text-decoration: none !important; /* Added !important */
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 14px 31px 0px rgba(0, 25.99999999999999, 87, 0.1);
+        border-radius: 20px 0px 20px 0px;
+    }
+
+    .Login_btn:hover {
+    /* Change color on hover */
+    color: white !important;
+}
+
+/*Main Information page css*/
+.date-time {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: #0C87CA; /* Blue color */
+}
+
+    .date-time span {
+        font-weight: bold;
+    }
+.font-size-button {
+    font-size: 22px !important;
+}
+
+
+.content {
+    width: 100%;
+    border: 50px solid #dcdcdc !important;
+    overflow: hidden;
+}
+.date-time-font-size{
+    font-size:30px;
+}
+.form-check-input[type="radio"] {
+    width: 1.5em; /* Adjust the width */
+    height: 1.5em; /* Adjust the height */
+    color: #0C87CA !important;  /* Set the color */
+}
+
+
+
+.centered-button {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+.custom-radio .form-check-input:checked + .form-check-label::before {
+    background-color: #0C87CA; /* Color when radio button is checked */
+    border-color: #0C87CA; /* Border color when radio button is checked */
+}
+/* Centering the table content */
+/*table {
+    margin: 0 auto;*/ /* Centering horizontally */
+    /*border-collapse: collapse;*/ /* Collapsing borders to avoid double borders */
+    /*border: 2px solid black;*/ /* Adding border */
+/*}*/
+
+/* Applying top class CSS */
+.top {
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 100px;
+  
+    color: #73879C;
+    font-size: 18px;
+    font-family: "Mulish", sans-serif;
+    margin-top: -15px;
+    margin-bottom: -23px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.notice {
+    text-align: center;
+    border: solid;
+    height: 340px;
+}
+
+table .tableLeave{
+    text-align: center;
+    color: #0C87CA;
+}
+    .input-text-font-size{
+    font-family: Sans-serif !important;
+}
+

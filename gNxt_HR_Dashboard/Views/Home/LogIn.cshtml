@@ -1,0 +1,94 @@
+﻿@model gNxt_HR_Dashboard.Models.LoginModels
+@{
+    Layout = "_LogoutPageLogin";
+}
+<style>
+    .conatent {
+        background-color: #dcdcdc;
+    }
+    .div-background {
+        background-size: cover;
+        /*background-image: url();*/
+        height: 2177px;
+        width: 1193px;
+        background: linear-gradient(0deg, rgba(255,255,255,0.3), rgba(255, 255, 255, 0.3)), url('../../Image/new-pexels-thisisengineering-3861437.png');
+        background-size: cover;
+    }
+</style>
+<link rel="stylesheet" href="~/css/bootstrap.min.css" />
+
+<link rel="stylesheet" href="~/css/bootstrap.min.css" />
+
+<div class="container  p-5 pb-0" style="background-color:#dcdcdc">
+    <div class="bg-white">
+        <div class="row">
+            <div>
+                <div class="p-1">
+
+
+                    <div class="div-background" id="loginPage">
+                        <form method="post">
+                            <div class="row col-md-12 ">
+                                <div class="p-5 mt-1" style="color: #0C87CA;  text-align: center; padding-top:400px !important">
+                                    <h3 class="input-text-font-size"><strong style="font-size:70px">Employee Self Service</strong></h3>
+                                    <div class="p-3 mt-5" style="padding-top:141px !important">
+                                        <div class="form-group row mt-3 p-4">
+                                            <div class="d-flex">
+                                                <div class="col-6 mt-1">
+                                                    <label for="exampleInputEmail1" class="col-7 input-text-font-size" style="font-size:37px"><strong>User Name</strong></label>
+                                                </div>
+                                                <div class="col-5 mt-2">
+                                                    <input type="text" class="form-control py-4" id="exampleInputEmail1" name="Username" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mt-3 p-4" style="padding-top:86px !important">
+                                            <div class="d-flex">
+                                                <div class="col-6 mt-1">
+                                                    <label for="exampleInputEmail1" class="col-7 me-3 input-text-font-size" style="font-size:37px"><strong>Password</strong></label>
+                                                </div>
+                                                <div class="col-5 mt-2">
+                                                    <input type="password" class="form-control py-4" id="exampleInputPassword" name="Userpassword" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label class="input-text-font-size" style="color:red"><b>@ViewBag.Text</b></label>
+                                <div class="mt-3" style="color: #0C87CA;  text-align: center; padding-top:100px !important">
+                                 <a class="elementor-button col-9 centered-button" id="subMainDivButton" style="height:82px !important" href="@Url.Action("Index", "Home")"><strong class="input-text-font-size" style="font-size:25px">Cancel</strong></a>
+                                    @*<a class="Login_btn col-9 centered-button" href="@Url.Action("Index", "Home")"><strong class="input-text-font-size" style="font-size:25px">Cancel</strong></a>*@
+                                 
+                                   </div>
+                                  <div class="mt-3" style="color: #0C87CA;  text-align: center;  padding-top:50px !important">
+
+                                     <input type="submit" value="OK" style="height:82px !important; font-size: 25px !important;" class="elementor-button align-items-center justify-content-center col-9 centered-button" />
+
+                                  </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-end p-2">
+            <strong style="font-size:15px">© powered by </strong>
+            <img src="~/image/gnxt__newlogo.png" alt="Powered by logo" style="width:10%; height:100%" />
+        </div>
+    </div>
+
+
+</div>
+
